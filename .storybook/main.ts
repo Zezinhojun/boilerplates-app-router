@@ -2,7 +2,7 @@ import type { StorybookConfig } from "@storybook/nextjs";
 
 const config: StorybookConfig = {
   staticDirs: ["../public"],
-  stories: ["../src/components/**/stories.tsx"],
+  stories: ["../src/app/components/**/stories.tsx"],
   addons: ["@storybook/addon-essentials"],
   framework: {
     name: "@storybook/nextjs",
@@ -12,7 +12,7 @@ const config: StorybookConfig = {
     autodocs: true,
   },
   webpackFinal: async (config) => {
-    config.resolve?.modules?.push(`${process.cwd()}/src`);
+    config.resolve?.modules?.push(`${process.cwd()}/src`, "node_modules");
     return config;
   },
 };
