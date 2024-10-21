@@ -1,3 +1,4 @@
+import StyledComponentsRegistry from "@/lib/registry";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
@@ -27,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   );
