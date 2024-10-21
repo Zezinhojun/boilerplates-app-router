@@ -13,11 +13,17 @@ const config: Config = {
     "src/**/*.ts(x)?",
     "!src/app/**", //should be tested in e2e
     "!src/lib/registry/tsx",
+    "!src/types/**",
+    "!src/styles/**",
   ],
   testEnvironment: "jsdom",
   // Add more setup options before each test is run
   setupFilesAfterEnv: ["<rootDir>/.jest/setup.ts"],
   preset: "ts-jest",
+  moduleNameMapper: {
+    "^styled-components":
+      "styled-components/dist/styled-components.browser.cjs.js",
+  },
 };
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
 export default createJestConfig(config);
