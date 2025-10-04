@@ -1,3 +1,5 @@
+"use client";
+
 import * as S from "./styles";
 
 const Main = ({
@@ -6,7 +8,7 @@ const Main = ({
 }) => (
   <S.Wrapper>
     <S.Logo src="/img/logo.svg" />
-    <S.Title>{title}</S.Title>
+    <S.Title variant="h1">{title}</S.Title>
     <S.Description>{description}</S.Description>
     <S.Illustration src="/img/hero-illustration.svg" />
   </S.Wrapper>

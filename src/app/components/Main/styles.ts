@@ -1,34 +1,36 @@
 "use client";
 
-import styled from "styled-components";
+import { Box, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
-export const Wrapper = styled.main`
-  background-color: #06092b;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  padding: 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
+export const Wrapper = styled(Box)({
+  backgroundColor: "#06092b",
+  color: "#fff",
+  width: "100%",
+  height: "100%",
+  padding: "3rem",
+  textAlign: "center",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+});
 
-export const Logo = styled.img`
-  width: 25rem;
-  margin-bottom: 2rem;
-`;
-export const Title = styled.h1`
-  font-size: 2.5rem;
-`;
+export const Logo = styled("img")({
+  width: "25rem",
+  marginBottom: "2rem",
+});
 
-export const Description = styled.h2`
-  font-size: 2rem;
-  font-weight: 400;
-`;
+export const Title = styled(Typography)({
+  fontSize: "2.5rem",
+});
 
-export const Illustration = styled.img`
-  margin-top: 3rem;
-  width: min(30rem, 100%);
-`;
+export const Description = styled(Typography)({
+  fontSize: "2rem",
+  fontWeight: 400,
+});
+
+export const Illustration = styled("img")({
+  marginTop: "3rem",
+  width: "min(30rem, 100%)",
+});
