@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate",
+  "name": "dashboard",
   "version": "2.0.0",
   "private": true,
   "scripts": {
@@ -16,11 +16,26 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fullcalendar/core": "^6.1.19",
+    "@fullcalendar/daygrid": "^6.1.19",
+    "@fullcalendar/list": "^6.1.19",
+    "@fullcalendar/timegrid": "^6.1.19",
+    "@mui/icons-material": "^7.3.4",
+    "@mui/material": "^7.3.4",
+    "@mui/x-data-grid": "^8.13.1",
+    "@nivo/bar": "^0.99.0",
+    "@nivo/core": "^0.99.0",
+    "@nivo/geo": "^0.99.0",
+    "@nivo/line": "^0.99.0",
+    "@nivo/pie": "^0.99.0",
     "boilerplate": "file:",
+    "formik": "^2.4.6",
     "next": "15.5.4",
     "react": "19.1.1",
     "react-dom": "19.1.1",
-    "styled-components": "^6.1.19"
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
